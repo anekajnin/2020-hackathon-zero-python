@@ -33,4 +33,4 @@ def Game():
     winner = quienGana(player, ai)
     print(winner)
 
-Game()
+#Game()

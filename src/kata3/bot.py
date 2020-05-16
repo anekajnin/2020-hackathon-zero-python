@@ -21,8 +21,8 @@ def help(update, context):
     return "Ayudame!"
 
 def mayus(update, context):
-        update.message.reply_text(update.message.text[len('/mayus ')::].upper())
-        return update.message.text[len('/mayus ')::].upper()
+        update.message.reply_text(context.args[0].upper())
+        return context.args[0].upper()
 
 def alreves(update, context):
     """Repite el mensaje del usuario."""
